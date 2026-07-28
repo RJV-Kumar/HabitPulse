@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useHabits, Category } from '@/lib/HabitContext';
 import { Trash2, Plus, ListTodo, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ContributionGraph } from './ContributionGraph';
+import { CalendarView } from './CalendarView';
 
 const CATEGORIES: Category[] = ['Health', 'Fitness', 'Learning', 'Productivity', 'Other'];
 
@@ -112,9 +112,11 @@ export function HabitsList() {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden"
                       >
-                        <div className="p-4 bg-black/20 border-t border-white/5">
-                          <h4 className="text-[10px] text-slate-500 uppercase tracking-widest mb-4">Habit Progress</h4>
-                          <ContributionGraph filterHabitId={habit.id} />
+                        <div className="p-4 bg-black/20 border-t border-white/5 flex gap-4 overflow-x-auto custom-scrollbar">
+                          <div className="min-w-[300px]">
+                            <h4 className="text-[10px] text-slate-500 uppercase tracking-widest mb-4">Calendar Progress</h4>
+                            <CalendarView habitId={habit.id} />
+                          </div>
                         </div>
                       </motion.div>
                     )}
