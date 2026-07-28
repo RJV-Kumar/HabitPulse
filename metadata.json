@@ -1,0 +1,6 @@
+{
+  "name": "HabitPulse",
+  "description": "Track daily habits and routines with GitHub-style contribution graphs and analytics.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
