@@ -2,8 +2,8 @@
 
 import React, { useMemo, useState } from 'react';
 import { useHabits, Category } from '@/lib/HabitContext';
-import { ContributionGraph } from './ContributionGraph';
-import { CalendarView } from './CalendarView';
+import { ContributionGraph } from '../ContributionGraph';
+import { CalendarView } from '../CalendarView';
 import { Activity, TrendingUp, AlertCircle, LayoutGrid, List } from 'lucide-react';
 import { differenceInDays, startOfDay } from 'date-fns';
 

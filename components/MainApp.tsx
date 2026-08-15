@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useHabits } from '@/lib/HabitContext';
-import { Dashboard } from './Dashboard';
+import { Dashboard } from './dashboard/Dashboard';
 import { DailyTracker } from './DailyTracker';
 import { HabitsList } from './HabitsList';
 import { Activity, CalendarCheck, LayoutDashboard, ListTodo, LogOut, Moon, Sun, Bell, BellOff } from 'lucide-react';
