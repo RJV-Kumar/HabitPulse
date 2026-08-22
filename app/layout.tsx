@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-[#0a0a0a] text-slate-100 font-sans antialiased min-h-screen selection:bg-emerald-500/30">
+      <body className="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 font-sans antialiased min-h-screen selection:bg-rose-500/30 transition-colors duration-200">
         <HabitProvider>
           {children}
         </HabitProvider>
